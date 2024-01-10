@@ -1,0 +1,25 @@
+<img src="/assets/zenitsu02.webp" class="imgZenitsu">
+<div class="login-modal-pg">
+        <form  [formGroup]="formLogin">
+        <div>
+            <input type="text" placeholder="Email" formControlName="email" [ngClass]="{'erroInput' : this.getErrorDirty('email','email') || this.getErrorTouched('email','required')}">
+        </div>
+
+        <div>
+            <input type="{{inputTypePass}}" placeholder="Senha" formControlName="password" (blur)="validarPassword()"
+            [ngClass]="{'erroInput' : this.getErrorTouched('password','required') || this.getErrorDirty('password','PasswordErro')}">
+            <img src="/assets/ocultar.png" class="img-hidden" (click)="alterarHiddenPassword()">
+        </div>
+        <div class="divBotoes">
+            <div>
+                <button type="button" (click)="sendLogin()">Login</button>
+            </div>
+            <div>
+                <button type="button" [routerLink]="'/cadastro'">Cadastrar</button>
+            </div>
+            <div>
+                <button type="button">Esqueci Senha</button>
+            </div>
+        </div>
+    </form>
+</div>

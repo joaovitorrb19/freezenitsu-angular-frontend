@@ -1,0 +1,59 @@
+.container-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-35%);
+    height: 300px;
+    width: 300px;
+}
+
+@media screen and (min-width:769px)  and (min-height:791px) {
+  
+}
+
+input{
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    height: 20px;
+}
+
+.password{
+    position: absolute;
+}
+
+.imgZenitsu{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45%,-137%);
+    width: 200px;
+    height: 200px;
+}
+
+.img-hidden{
+   width: 20px;
+   right: 7px;
+   height: 20px;
+   position: absolute;
+   cursor: pointer;
+}
+
+div{
+    position: relative;
+    height: 30px;
+}
+
+.erroInput{
+    border: 1px solid rgb(226, 61, 61);
+}
+
+.divBotoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
